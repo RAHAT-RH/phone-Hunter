@@ -20,19 +20,20 @@
 
             <div class="logo text-center my-4">
                 <img src="images/phone-removebg-preview.png" height="150px" alt="">
+                <h1 class="fs-2 text text-success">Phone Details Search Engine</h1>
             </div>
 
             <!-- Input Box Div -->
-            <div class="d-flex w-50 mx-auto">
-                <input class="form-control " type="search" placeholder="Search What You Want..." aria-label="Search"
-                    id="input-field">
-                <button class="btn btn-success" onclick="loadButton()" type="submit">Search</button>
+            <div class="d-flex w-50 mx-auto box-input-btn">
+                <input class="form-control input-field" type="search" placeholder="Search Your Phone 📱..."
+                    aria-label="Search" id="input-field">
+                <button class="btn btn-success button" onclick="loadButton()" type="submit">Search</button>
             </div>
 
             <!-- Error Show -->
-            <div class="error-message">
-                <p class="text-center text-danger" id="error-message"></p>
-                <div class="text-center text-danger" id="count-number"></div>
+            <div class="error-message my-2">
+                <p class="text-center fw-bold text-danger" id="error-message"></p>
+                <div class="my-2 fw-bold text-center text-danger" id="count-number"></div>
             </div>
 
             <!-- spinner -->
@@ -65,11 +66,11 @@
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                            <div class="card" id="phone-details">
-                        
-                            </div>
-                            <p class="fw-bold" id='msgError'></p>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <div class="card" id="phone-details">
+
+                        </div>
+                        <p class="fw-bold" id='msgError'></p>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
