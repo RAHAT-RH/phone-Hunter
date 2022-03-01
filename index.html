@@ -24,7 +24,8 @@
 
             <!-- Input Box Div -->
             <div class="d-flex w-50 mx-auto">
-                <input class="form-control " type="search" placeholder="Search What You Want..." aria-label="Search" id="input-field">
+                <input class="form-control " type="search" placeholder="Search What You Want..." aria-label="Search"
+                    id="input-field">
                 <button class="btn btn-success" onclick="loadButton()" type="submit">Search</button>
             </div>
 
@@ -38,7 +39,7 @@
 
             <div class="d-flex d-none justify-content-center" id="spinner-blink">
                 <div class="spinner-grow" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                    <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
 
@@ -53,7 +54,26 @@
             </div>
 
             <!-- phone details -->
-            
+
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                            <div class="card" id="phone-details">
+                        
+                            </div>
+                            <p class="fw-bold" id='msgError'></p>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- Main Section End-->
