@@ -32,14 +32,14 @@ const loadButton = () => {
       spinner("d-block", "d-none");
       const phonesFromData = phones.data;
       if (phones.length > 1) {
-        document.getElementById('count-number').innerHTML = `${phones.length} found form "<strong>${inputText}</strong>"`;
+        document.getElementById('count-number').innerHTML = `${phones.length} Results Found Form "<strong>${inputText}</strong>"`;
       } else if (phones.length == 1) {
-        document.getElementById('count-number').innerHTML = `${phones.length} found form "<strong>${inputText}</strong>"`;
+        document.getElementById('count-number').innerHTML = `${phones.length} Result Found Form "<strong>${inputText}</strong>"`;
       } else if (phones == '') {
 
         inputField.value = '';
         document.getElementById('resultShow').textContent = '';
-        let errorNoFound = 'no found results';
+        let errorNoFound = 'No Found Results Search Again 🔎';
         const countError = document.getElementById('count-number');
         countError.innerText = errorNoFound;
       }
@@ -96,7 +96,7 @@ const displayPhoneDetailsResults = (results) => {
               <div class="card-body">
                 <h5 class="card-title fs-4">Name: ${results.name}</h5>
                 <h6 class="card-title fs-5">Brand: ${results.brand}</h6>
-                <p class=" fs-6 fw-bold"><strong class=''>Release Date</strong>: ${results?.releaseDate? results.releaseDate: "<span class='text-danger'>No date found</span>"}  </p>
+                <p class=" fs-6 fw-bold"><strong class=''>Release Date</strong>: ${results?.releaseDate? results.releaseDate: "<span class='text-danger'>No Release Date Found ❌</span>"}  </p>
                 <div class="card-text">
                   <h6><strong>Main Features:</strong></h6>
                   <span class="fw-light d-block"><strong class='fw-bold'>Chip Set:</strong> ${results.mainFeatures.chipSet}</span>
@@ -105,11 +105,11 @@ const displayPhoneDetailsResults = (results) => {
                   <span class="fw-light d-block"><strong class='fw-bold'>Memory:</strong> ${results.mainFeatures.memory}</span>
                   <span class="fw-light d-block"><strong class='fw-bold'>Sensors:</strong> ${sensorArrays}</span>
                   <h6><strong class='fw-bold'>Others:</strong></h6>
-                  <span class='fw-light d-block'><strong class='fw-bold'>WLAN:</strong> ${results?.others?.WLAN? results.others.WLAN: "WALN not found"}</span>
-                  <span class='fw-light d-block'><strong class='fw-bold'>Bluetooth:</strong> ${results?.others?.Bluetooth? results.others.Bluetooth: "Bluetooth not found"}</span>
-                  <span class='fw-light d-block'><strong class='fw-bold'>NFC:</strong> ${results?.others?.NFC? results.others.NFC: ">NFC not found"}</span>
-                  <span class='fw-light d-block'><strong class='fw-bold'>GPS:</strong> ${results?.others?.GPS? results.others.GPS: "GPS not found"}</span>
-                  <span class='fw-light d-block'><strong class='fw-bold'>Radio:</strong> ${results?.others?.Radio? results.others.Radio: "Radio not found"}</span>
+                  <span class='fw-light d-block'><strong class='fw-bold'>WLAN:</strong> ${results?.others?.WLAN? results.others.WLAN: "WALN Not Found ❌"}</span>
+                  <span class='fw-light d-block'><strong class='fw-bold'>Bluetooth:</strong> ${results?.others?.Bluetooth? results.others.Bluetooth: "Bluetooth Not Found ❌"}</span>
+                  <span class='fw-light d-block'><strong class='fw-bold'>NFC:</strong> ${results?.others?.NFC? results.others.NFC: "NFC Not Found ❌"}</span>
+                  <span class='fw-light d-block'><strong class='fw-bold'>GPS:</strong> ${results?.others?.GPS? results.others.GPS: "GPS Not Found ❌"}</span>
+                  <span class='fw-light d-block'><strong class='fw-bold'>Radio:</strong> ${results?.others?.Radio? results.others.Radio: "Radio Not Found ❌"}</span>
                 </div>
               </div>
             </div>
