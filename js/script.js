@@ -56,7 +56,7 @@ const loadButton = () => {
                 <h4 class="card-title text-success text-center">${phone.brand}</h4>
                 <h5 class="card-title text-success text-center">${phone.phone_name}</h5>
                 <div class='text-center'>
-                <button onclick= "loadPhoneIdName('${phone.slug}')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success text-center mx-auto">Go somewhere</button>
+                <button onclick= "loadPhoneIdName('${phone.slug}')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success text-center mx-auto">Show Details</button>
                 </div>
                 
               </div>
